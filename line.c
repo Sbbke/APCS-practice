@@ -22,9 +22,9 @@ int main(){
     for(int i = 1; i <= n; i++){
         scanf("%d %d", &kv[i].start, &kv[i].end);
     }
-
+    printf("---------------------\n");
     for(int i = 1; i <= n; i++){
-        printf("%d %d", kv[i].start, kv[i].end);
+        printf("%d %d\n", kv[i].start, kv[i].end);
     }
     printf("---------------------\n enter sort\n");
 
@@ -32,7 +32,7 @@ int main(){
 
     printf("---------------------\n after sort\n");
     for(int i = 1; i <= n; i++){
-        printf("%d %d", kv[i].start, kv[i].end);
+        printf("%d %d\n", kv[i].start, kv[i].end);
     }
     calculateAns(kv, &ans, n);
     printf("%d\n", ans);
