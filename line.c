@@ -17,7 +17,7 @@ int main(){
 
     int n, ans =0;
     scanf("%d", &n);
-    struct line *kv = malloc(n * sizeof(struct line));
+    struct line *kv = malloc((n+1) * sizeof(struct line ));
 
     for(int i = 1; i <= n; i++){
         scanf("%d %d", &kv[i].start, &kv[i].end);
