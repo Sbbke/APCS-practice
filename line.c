@@ -53,7 +53,7 @@ void insertionSort(struct line *kv, int n){
 
 void insert(struct line e,struct line *kv, int i){
     kv[0] = e;
-    while (e.start < kv[i].key)
+    while (e.start < kv[i].start)
     {
         kv[i+1] = kv[i];
         i--;
