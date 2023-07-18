@@ -23,8 +23,17 @@ int main(){
         scanf("%d %d", &kv[i].start, &kv[i].end);
     }
 
+    for(int i = 1; i <= n; i++){
+        printf("%d %d", kv[i].start, kv[i].end);
+    }
+    printf("---------------------\n enter sort\n");
+
     insertionSort(kv, n);
 
+    printf("---------------------\n after sort\n");
+    for(int i = 1; i <= n; i++){
+        printf("%d %d", kv[i].start, kv[i].end);
+    }
     calculateAns(kv, &ans, n);
     printf("%d\n", ans);
     
