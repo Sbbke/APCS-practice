@@ -34,14 +34,14 @@ void calculateAns(struct line *kv,int *ans, int n){
     struct line currLine = kv[1];
     for(int i = 2; i <= n; i++){
         if(kv[i].start > currLine.end){
-            ans += currLine.end - currLine.start;
+            *ans += currLine.end - currLine.start;
             currLine = kv[i];
         }else if(kv[i].end < currLine.end){
             currLine.end = kv->end;
         }
     }
 
-    ans += currLine.end - currLine.start;
+    *ans += currLine.end - currLine.start;
 }
 
 void insertionSort(struct line *kv, int n){
