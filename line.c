@@ -26,7 +26,7 @@ int main(){
     insertionSort(kv, n);
 
     calculateAns(kv, &ans, n);
-    printf("%d", n);
+    printf("%d\n", ans);
     
 
 }
