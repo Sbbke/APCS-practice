@@ -37,7 +37,7 @@ void calculateAns(struct line *kv,int *ans, int n){
             *ans += currLine.end - currLine.start;
             currLine = kv[i];
         }else if(kv[i].end < currLine.end){
-            currLine.end = kv->end;
+            currLine.end = kv[i].end;
         }
     }
 
