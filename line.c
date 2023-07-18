@@ -36,7 +36,7 @@ void calculateAns(struct line *kv,int *ans, int n){
         if(kv[i].start > currLine.end){
             ans += currLine.end - currLine.start;
             currLine = kv[i];
-        }else if(kv.end < currLine.end){
+        }else if(kv[i].end < currLine.end){
             currLine.end = kv->end;
         }
     }
@@ -52,12 +52,12 @@ void insertionSort(struct line *kv, int n){
 }
 
 void insert(struct line e,struct line *kv, int n){
-    a[1] = e;
+    kv[0] = e;
     while (e.start < a[n].key)
     {
-        a[i+1] = a[i];
+        kv[i+1] = kv[i];
         i--;
     }
-    a[i+1] = e;
+    kv[i+1] = e;
     
 }
