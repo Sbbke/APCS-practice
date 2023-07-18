@@ -51,9 +51,9 @@ void insertionSort(struct line *kv, int n){
     }
 }
 
-void insert(struct line e,struct line *kv, int n){
+void insert(struct line e,struct line *kv, int i){
     kv[0] = e;
-    while (e.start < a[n].key)
+    while (e.start < kv[i].key)
     {
         kv[i+1] = kv[i];
         i--;
